@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+RewriteEngine On
+
+## RewriteCond %{HTTPS} off
+## RewriteCond %{HTTP:X-Forwarded-Proto} !https
+## RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+## pages
+    RewriteRule ^game/stop(/?)+$ stop.php [L]
+    RewriteRule ^api/game/action/sit(/?)+$ module/alluser.action.php [L]
+    RewriteRule ^api/game/action/kill(/?)+$ module/kill.action.php [L]
+    RewriteRule ^api/game/action/healthy(/?)+$ module/save.life.php [L]
+    RewriteRule ^api/game/action/check(/?)+$ module/check.php [L]
+    RewriteRule ^api/game/get/users(/?)+$ module/api.get.users.php [L]
