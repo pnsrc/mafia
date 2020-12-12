@@ -2,15 +2,10 @@
 require "rb.php";
 $activ = 'true';
 
-if (file_exist('preloaded_init.php') == true){
-require "preloaded_init.php";
-} else {
-//Конфигурация сервера
-$host = 'host';
-$dbname = 'name';
-$name =  'name';
-$password = 'pass';
-}
+$host = 'finepage.database.windows.net';
+$dbname = 'mafia';
+$name =  'alexey';
+$password = 'root021Aa';
 
 if($activ == 'true'){
 R::setup( 'mysql:host='.$host.';dbname='.$dbname.'',''.$name.'', ''.$password.'' ); 
