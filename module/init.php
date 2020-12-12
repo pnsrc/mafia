@@ -2,10 +2,10 @@
 require "rb.php";
 $activ = 'true';
 
-$host = 'finepage.database.windows.net';
-$dbname = 'mafia';
-$name =  'alexey';
-$password = 'root021Aa';
+$host = 'host';
+$dbname = 'name';
+$name =  'username';
+$password = 'password';
 
 if($activ == 'true'){
 R::setup( 'mysql:host='.$host.';dbname='.$dbname.'',''.$name.'', ''.$password.'' ); 
