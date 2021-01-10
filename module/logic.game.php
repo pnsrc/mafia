@@ -1,4 +1,5 @@
 <?php
+// Получение статусов о состояние здоровья, посажен ли в тюрьму, либо вылечен.
 $usersidget = $content->dead;
 $usersidget2 = $content->sit;
 $usersidget3 = $content->stamina;
